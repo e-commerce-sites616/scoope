@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your bag | SCOOPÉ</title>
+  <meta name="description" content="Review your SCOOPÉ bag.">
+  <meta name="robots" content="noindex">
+  <link rel="canonical" href="{{siteUrl}}/cart">
+  <meta name="theme-color" content="#F6F0E7">
+  <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles/main.css">
+  <script src="/modules/boot.js"></script>
+  <script type="module" src="/modules/main.js"></script>
+</head>
+<body data-page="cart">
+{{>header}}
+<main id="main" class="wrap bagpage">
+  <h1 class="shop__title bagpage__title">Your bag</h1>
+  <div data-cart-page><p class="bagpage__loading">Loading your bag...</p></div>
+  <noscript><p>The bag needs JavaScript to work.</p></noscript>
+</main>
+{{>footer}}
+</body>
+</html>

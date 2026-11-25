@@ -1,0 +1,24 @@
+# Render Blueprint. A persistent disk requires a paid instance type.
+# Free plan? Delete the `disk:` block and the DATA_DIR variable: the app still runs, but all
+# data (accounts, orders) is lost on every redeploy/restart and /api/health reports "temporary-demo".
+services:
+  - type: web
+    name: scoope
+    runtime: node
+    plan: starter
+    buildCommand: "echo 'no build step: zero dependencies'"
+    startCommand: node src/server/index.js
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATA_DIR
+        value: /var/data
+      - key: SITE_URL
+        sync: false          # set to your onrender.com URL (or custom domain) after first deploy
+      - key: DEMO_ORDER_PACE_SECONDS
+        value: "45"
+    disk:
+      name: scoope-data
+      mountPath: /var/data
+      sizeGB: 1

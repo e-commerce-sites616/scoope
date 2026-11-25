@@ -1,0 +1,29 @@
+:root {
+  --cream: #F6F0E7;
+  --wine: #783D45;
+  --cocoa: #382822;
+  --biscuit: #D8BDA2;
+  --milk: #DCA1A0;
+  --pistachio: #839078;
+  /* derived */
+  --caramel: #B98A5E;
+  --biscuit-soft: #EBDDCC;
+  --muted: #6B5A52;
+  --line: rgba(56, 40, 34, .18);
+  --line-dark: rgba(246, 240, 231, .22);
+
+  --font-display: "Cormorant Garamond", "Crimson Text", Georgia, "Times New Roman", serif;
+  --font-body: "DM Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+  --gutter: clamp(1.25rem, 4vw, 3.5rem);
+  --max: 1440px;
+  --nav-h: 76px;
+  --ease: cubic-bezier(.2, .7, .2, 1);
+}
+/* Fonts are self-hosted (SIL Open Font Licence, see public/fonts/OFL-*.txt).
+   Cormorant Garamond is the intended display face but its file is not bundled: it is used if
+   installed (local) or if you add a file and a url() here. Crimson Text is the bundled stand-in. */
+@font-face { font-family: "Cormorant Garamond"; font-weight: 500 700; font-display: swap; src: local("Cormorant Garamond"); }
+@font-face { font-family: "Crimson Text"; font-weight: 400 500; font-style: normal; font-display: swap; src: url("/fonts/CrimsonText-Regular.woff") format("woff"); }
+@font-face { font-family: "Crimson Text"; font-weight: 600 700; font-style: normal; font-display: swap; src: url("/fonts/CrimsonText-SemiBold.woff") format("woff"); }
+@font-face { font-family: "DM Sans"; font-weight: 100 1000; font-display: swap; src: url("/fonts/DMSans-Variable.woff") format("woff"); }

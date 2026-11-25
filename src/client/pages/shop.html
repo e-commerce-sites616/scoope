@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {{{seo}}}
+  <meta name="theme-color" content="#F6F0E7">
+  <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles/main.css">
+  <script src="/modules/boot.js"></script>
+  <script type="module" src="/modules/main.js"></script>
+</head>
+<body data-page="{{mode}}">
+{{>header}}
+<main id="main" class="shop">
+  <header class="shop__head wrap">
+    <h1 class="shop__title">{{heading}}</h1>
+    <p class="shop__count" data-count aria-live="polite"></p>
+  </header>
+  <div class="wrap">
+    <form class="filters" data-filters role="search" aria-label="Filter products">
+      <label class="field field--search"><span class="field__label">Search flavours</span><input type="search" name="q" placeholder="Try pistachio" autocomplete="off" maxlength="80"></label>
+      <div class="tabs" data-categories role="group" aria-label="Category"></div>
+      <div class="filters__row">
+        <label class="field"><span class="field__label">Min price (₦)</span><input type="number" name="minPrice" min="0" step="100" inputmode="numeric"></label>
+        <label class="field"><span class="field__label">Max price (₦)</span><input type="number" name="maxPrice" min="0" step="100" inputmode="numeric"></label>
+        <label class="field"><span class="field__label">Sort by</span><select name="sort"><option value="popular">Most popular</option><option value="newest">Newest</option><option value="price-asc">Price, low to high</option><option value="price-desc">Price, high to low</option></select></label>
+        <label class="check"><input type="checkbox" name="available" value="true"><span>In stock only</span></label>
+        <button class="link filters__clear" type="button" data-clear>Clear filters</button>
+      </div>
+    </form>
+    <div class="grid" data-grid aria-busy="true"></div>
+    <div class="empty" data-no-results hidden>
+      <p class="empty__title">Nothing matches that.</p>
+      <p>Try a different flavour, widen the price range or clear the filters.</p>
+      <button class="btn" type="button" data-clear>Clear filters</button>
+    </div>
+    <div class="empty" data-error hidden>
+      <p class="empty__title">The menu didn't load.</p>
+      <p>Check your connection and try again.</p>
+      <button class="btn" type="button" data-retry>Try again</button>
+    </div>
+  </div>
+</main>
+{{>footer}}
+</body>
+</html>

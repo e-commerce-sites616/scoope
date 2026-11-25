@@ -1,0 +1,18 @@
+{
+  "name": "scoope",
+  "version": "0.1.0",
+  "description": "SCOOP\u00c9: a fictional premium ice cream store. Zero-dependency Node.js app.",
+  "private": true,
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node src/server/index.js",
+    "dev": "node --watch src/server/index.js",
+    "test": "node --test",
+    "verify:assets": "node scripts/verify-assets.js",
+    "test:browser": "python3 tests/browser/smoke.py && python3 tests/browser/smoke_orders.py && python3 tests/browser/smoke_images.py",
+    "render": "python3 tools/render/build_all.py all && python3 tools/render/update_manifest.py && node scripts/verify-assets.js --write"
+  }
+}

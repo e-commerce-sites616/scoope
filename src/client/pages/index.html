@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {{{seo}}}
+  <meta name="theme-color" content="#F6F0E7">
+  <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles/main.css">
+  <script src="/modules/boot.js"></script>
+  <script type="module" src="/modules/main.js"></script>
+</head>
+<body>
+{{>header}}
+<main id="main">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero__copy">
+      <h1 id="hero-title" aria-label="A little moment of indulgence.">
+        <span class="line" aria-hidden="true"><span>A little</span></span>
+        <span class="line" aria-hidden="true"><span>moment of</span></span>
+        <span class="line" aria-hidden="true"><span>indulgence.</span></span>
+      </h1>
+      <p class="hero__lede">Discover flavours worth slowing down for. Your next favourite scoop is waiting.</p>
+      <div class="hero__actions">
+        <a class="btn" href="/shop">Discover Our Flavours</a>
+        <a class="link" href="/our-story">Explore Our Story</a>
+      </div>
+    </div>
+    <div class="hero__art">
+      <svg data-parallax="0.06" viewBox="0 0 400 500" role="img" aria-label="Illustration of a waffle cone with strawberry, pistachio and vanilla scoops" xmlns="http://www.w3.org/2000/svg">
+        <defs><clipPath id="cone"><path d="M138 318H262L200 480Z"/></clipPath></defs>
+        <circle cx="200" cy="262" r="158" fill="#783D45" opacity=".55"/>
+        <path d="M138 318H262L200 480Z" fill="#D8BDA2"/>
+        <path clip-path="url(#cone)" d="M140 300L300 490M110 330L260 500M180 300L330 460M260 300L100 490M290 330L140 500M220 300L70 460" stroke="#B98A5E" stroke-width="3" fill="none"/>
+        <ellipse cx="200" cy="318" rx="74" ry="15" fill="#C98C8B"/>
+        <ellipse cx="200" cy="484" rx="64" ry="8" fill="#000" opacity=".25"/>
+        <circle cx="200" cy="288" r="68" fill="#DCA1A0"/>
+        <path d="M146 312c-2 22 4 34 12 34s12-12 10-34zM224 316c0 18 5 28 11 28s9-10 7-28z" fill="#DCA1A0"/>
+        <circle cx="200" cy="222" r="58" fill="#839078"/>
+        <circle cx="200" cy="166" r="48" fill="#F6F0E7"/>
+        <path d="M168 270a40 40 0 0 1 22-24M172 208a34 34 0 0 1 16-20M178 152a26 26 0 0 1 12-14" stroke="#F6F0E7" stroke-width="5" stroke-linecap="round" fill="none" opacity=".4"/>
+        <path d="M200 118c0-14 6-24 18-30" stroke="#839078" stroke-width="3" stroke-linecap="round" fill="none"/>
+        <circle cx="200" cy="124" r="14" fill="#A8505C"/>
+      </svg>
+      <img data-asset="hero-main" data-parallax="0.06" alt="" width="800" height="1000" decoding="async">
+    </div>
+  </section>
+
+  <section class="flavours" data-reveal aria-labelledby="flavours-title">
+    <div class="wrap flavours__grid">
+      <div>
+        <h2 id="flavours-title" class="h2">Six scoops to begin with.</h2>
+        <ul class="flavour-list" data-flavour-list>
+        <li data-stage="vanilla" data-name="Vanilla Bean"><a href="/product/vanilla-bean"><i class="sw sw--vanilla"></i><b>Vanilla Bean</b><span>Soft, floral and unhurried.</span><u>Shop</u></a></li>
+        <li data-stage="chocolate" data-name="Belgian Chocolate"><a href="/product/belgian-chocolate"><i class="sw sw--chocolate"></i><b>Belgian Chocolate</b><span>Deep cocoa with a clean finish.</span><u>Shop</u></a></li>
+        <li data-stage="strawberry" data-name="Strawberry Bliss"><a href="/product/strawberry-bliss"><i class="sw sw--strawberry"></i><b>Strawberry Bliss</b><span>Bright fruit folded into cream.</span><u>Shop</u></a></li>
+        <li data-stage="caramel" data-name="Salted Caramel"><a href="/product/salted-caramel"><i class="sw sw--caramel"></i><b>Salted Caramel</b><span>Burnt sugar, sea salt, a slow melt.</span><u>Shop</u></a></li>
+        <li data-stage="cookies" data-name="Cookies &amp; Cream"><a href="/product/cookies-and-cream"><i class="sw sw--cookies"></i><b>Cookies &amp; Cream</b><span>Crisp biscuit through sweet cream.</span><u>Shop</u></a></li>
+        <li data-stage="pistachio" data-name="Pistachio Dream"><a href="/product/pistachio-dream"><i class="sw sw--pistachio"></i><b>Pistachio Dream</b><span>Nutty, gentle and a little green.</span><u>Shop</u></a></li>
+        </ul>
+      </div>
+      <div class="stage" aria-hidden="true">
+        <div class="stage__frame"><img src="/assets/images/stage-vanilla.webp" data-stage="vanilla" alt="" width="600" height="750" decoding="async" class="is-on"><img src="/assets/images/stage-chocolate.webp" data-stage="chocolate" alt="" width="600" height="750" decoding="async" loading="lazy"><img src="/assets/images/stage-strawberry.webp" data-stage="strawberry" alt="" width="600" height="750" decoding="async" loading="lazy"><img src="/assets/images/stage-caramel.webp" data-stage="caramel" alt="" width="600" height="750" decoding="async" loading="lazy"><img src="/assets/images/stage-cookies.webp" data-stage="cookies" alt="" width="600" height="750" decoding="async" loading="lazy"><img src="/assets/images/stage-pistachio.webp" data-stage="pistachio" alt="" width="600" height="750" decoding="async" loading="lazy"></div>
+        <p class="stage__name" data-flavour-name>Vanilla Bean</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="strip" data-reveal aria-labelledby="strip-title"><div class="wrap"><h2 id="strip-title" class="h2">Find your moment.</h2><div class="strip__row">{{{collections}}}</div></div></section>
+
+  <section class="scrub" data-scrub data-src="/assets/videos/flavour-wheel-540.mp4" data-src-mobile="/assets/videos/flavour-wheel-360.mp4" data-palette="/assets/videos/flavour-wheel-palette.json" aria-labelledby="scrub-title">
+    <a class="scrub__skip" href="#after-scrub">Skip the flavour tour</a>
+    <div class="scrub__track">
+      <div class="scrub__sticky">
+        <div class="wrap scrub__grid">
+          <div class="scrub__copy">
+            <p class="eyebrow">The flavour wheel</p>
+            <h2 id="scrub-title" class="scrub__title">Pick a favourite.</h2>
+            <ol class="beats" data-beats>
+          <li class="beat" data-from="0" data-to="3.4"><h3>Which one is yours?</h3><p>Eight flavours, one wheel, no wrong answers. Keep scrolling and watch the colours change.</p></li>
+          <li class="beat" data-from="3.4" data-to="5.5"><h3>Cookies &amp; Cream</h3><p>Crisp biscuit through sweet cream.</p><a class="link" href="/product/cookies-and-cream">Meet Cookies &amp; Cream</a></li>
+          <li class="beat" data-from="5.5" data-to="7.4"><h3>Pistachio Dream</h3><p>Nutty, gentle and a little green.</p><a class="link" href="/product/pistachio-dream">Meet Pistachio Dream</a></li>
+          <li class="beat" data-from="7.4" data-to="8.5"><h3>Strawberry Bliss</h3><p>Bright fruit folded into cream.</p><a class="link" href="/product/strawberry-bliss">Meet Strawberry Bliss</a></li>
+          <li class="beat" data-from="8.5" data-to="10.2"><h3>Belgian Chocolate</h3><p>Deep cocoa with a clean finish.</p><a class="link" href="/product/belgian-chocolate">Meet Belgian Chocolate</a></li>
+          <li class="beat" data-from="10.2" data-to="12.2"><h3>Salted Caramel</h3><p>Burnt sugar, sea salt, a slow melt.</p><a class="link" href="/product/salted-caramel">Meet Salted Caramel</a></li>
+          <li class="beat" data-from="12.2" data-to="15.0"><h3>Something berry</h3><p>Berry Dream: strawberry and vanilla under berry sauce.</p><a class="link" href="/product/berry-dream">Meet Berry Dream</a></li>
+          <li class="beat" data-from="15.0" data-to="16.7"><h3>Still undecided?</h3><p>Choose your own scoops, toppings and sauces.</p><a class="link" href="/build">Build your own</a></li>
+          </ol>
+            <div class="scrub__bar" aria-hidden="true"><i></i></div>
+          </div>
+          <div class="scrub__frame">
+            <video muted playsinline preload="none" poster="/assets/videos/flavour-wheel-poster.webp" aria-hidden="true" tabindex="-1" width="540" height="960"></video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="build-cta on-dark" data-reveal id="after-scrub" aria-labelledby="build-title">
+    <div class="wrap build-cta__grid">
+      <h2 id="build-title" class="build-cta__title">Make it yours.</h2>
+      <div><p>Pick a base, up to four scoops, toppings and sauces. The price updates as you build.</p><a class="btn btn--light" href="/build">Build Your Own Sundae</a></div>
+    </div>
+  </section>
+
+  <section class="story on-dark" data-parallax="0.12" aria-labelledby="story-title">
+    <div class="wrap story__grid">
+      <h2 id="story-title" class="story__title">Dessert is worth slowing down for.</h2>
+      <div class="story__body">
+        <p>SCOOPÉ is built around one small idea: the best part of the day is often the few minutes you give to yourself. Choose a flavour, build a sundae, send a gift. Then take your time.</p>
+        <a class="btn btn--light" href="/our-story">Explore Our Story</a>
+      </div>
+    </div>
+  </section>
+  {{{seasonal}}}
+  <section class="best" data-reveal aria-labelledby="best-title"><div class="wrap"><h2 id="best-title" class="h2">Bestsellers.</h2><div class="grid grid--best">{{{bestsellers}}}</div></div></section>
+  <section class="quotes" data-reveal aria-labelledby="quotes-title"><div class="wrap"><h2 id="quotes-title" class="h2">Kind words.</h2>
+    <div class="quotes__row">
+      <figure><blockquote>The Belgian Chocolate tastes like the first square of a really good bar. I kept the tub for myself.</blockquote><figcaption>Adaeze O.</figcaption></figure>
+      <figure><blockquote>I built a sundae with pistachio and caramel and it was nicer than anything I could have ordered off a menu.</blockquote><figcaption>Tunde A.</figcaption></figure>
+      <figure><blockquote>The Sweet Box arrived looking like a present. My sister cried a little, in a good way.</blockquote><figcaption>Ifeoma N.</figcaption></figure>
+    </div>
+    <p class="quotes__note">Illustrative quotes written for this demonstration site. SCOOPÉ is a fictional brand.</p></div></section>
+  <section class="news on-dark" data-reveal aria-labelledby="news-title"><div class="wrap news__grid"><div><h2 id="news-title" class="news__title">Slow news, sweet news.</h2><p>New flavours and the occasional gift idea. Nothing more.</p></div>
+    <form class="news__form" data-newsletter novalidate><label class="field"><span class="field__label">Email address</span><input type="email" name="email" autocomplete="email" maxlength="254" required></label>
+      <label class="check"><input type="checkbox" name="consent"><span>I agree to receive SCOOPÉ emails.</span></label>
+      <button class="btn btn--light" type="submit">Subscribe</button><p class="news__msg" data-news-msg role="status"></p>
+      <p class="news__note">Demo site: subscriptions are stored locally and no emails are sent.</p></form></div></section>
+</main>
+{{>footer}}
+</body>
+</html>
